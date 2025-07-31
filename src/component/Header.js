@@ -1,4 +1,5 @@
 
+import {Link,useLocation} from 'react-router'
 
 function Header() {
      return(
@@ -13,10 +14,11 @@ function Header() {
                             </div>
                             <nav className="site-nav">
                                 <ul id="site-menu" className="site-menu">
-                                    <li><a href="#">Home</a>
+                                    <li> <Link to={"/"}></Link>Home
                                         <ul className="dropdown-menu-col-1">
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index2.html">Home 2</a></li>
+                                            <li> <Link to={"/"}> Home </Link></li>
+                                           
+                                            
                                         </ul>
                                     </li>
                                     <li>
@@ -160,6 +162,7 @@ function Header() {
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
+                                    <li><Link to={"/about"}>About</Link></li> 
                                 </ul>
                             </nav>
                         </div>
