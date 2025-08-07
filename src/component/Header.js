@@ -14,7 +14,7 @@ function Header() {
                             </div>
                             <nav className="site-nav">
                                 <ul id="site-menu" className="site-menu">
-                                    <li> <Link to={"/"}></Link>Home
+                                    <li> <Link to={"/"}>Home</Link>
                                         <ul className="dropdown-menu-col-1">
                                             <li> <Link to={"/"}> Home </Link></li>
                                            
@@ -28,7 +28,7 @@ function Header() {
                                         <a href="#">Recipes</a>
                                         <ul className="dropdown-menu-col-1">
                                             <li>
-                                                <a href="recipe-with-sidebar.html">Recipes With Sidebar</a>
+                                                <Link to={'/recipe'}>recipe</Link>
                                             </li>
                                             <li>
                                                 <a href="recipe-without-sidebar.html">Recipes Without Sidebar</a>
@@ -157,7 +157,7 @@ function Header() {
                                     </li>
                                     <li><a href="#">Shop</a>
                                         <ul className="dropdown-menu-col-1">
-                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><Link to={'/shop'}>Shop</Link></li>
                                             <li><a href="single-shop.html">Shop Details</a></li>
                                         </ul>
                                     </li>

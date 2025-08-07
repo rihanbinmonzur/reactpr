@@ -3,6 +3,7 @@ import {Route, Routes } from 'react-router';
 import About from './pages/about';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
+import Recipe from './pages/Recipe';
 import './assets/css/normalize.css';
 import './assets/css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,6 +18,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
+            <Route path="/recipe" element={<Recipe/>}/>
             <Route path="/shop" element={<Shop/>} />
         </Routes>
 
